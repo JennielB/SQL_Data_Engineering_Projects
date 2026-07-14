@@ -1,6 +1,6 @@
 # Exploritory Data Analysis w/ SQL: Job Market Analysis  
 
-![Project 1 Overview](..\Images\1_1_Project1_EDA.png)  
+![Project 1 Overview](../Images/1_1_Project1_EDA.png)  
 
 A SQL data project that explores the job market for Data Engineers, this project is to demonstrate my ability to **write production-ready analytical SQL, create efficient queries, and turn buisness questions into data driven insight.**  
 
@@ -12,8 +12,8 @@ A SQL data project that explores the job market for Data Engineers, this project
 
 Queries:  
 [`01_top_demanded_skills`](../1_EDA/01_top_demanded_skills.sql) - Demand analysis with multi-table joins  
-[`02_top_paying_skills`](..\1_EDA\02_top_paying_skills.sql) - Salary analysis with aggregations  
-[`03_optimal_paying_skills`](..\1_EDA\03_optimal_paying_skills.sql) - Combined demand/salary optimization query  
+[`02_top_paying_skills`](../1_EDA/02_top_paying_skills.sql) - Salary analysis with aggregations  
+[`03_optimal_paying_skills`](../1_EDA/03_optimal_paying_skills.sql) - Combined demand/salary optimization query  
 
 ## Problem and Context  
 
@@ -27,7 +27,7 @@ balanced with pay.
 
 This project utilizes a **Data Warehouse** of real jobs for the analysis, the warehouse is  
 built using a star schema, the ERD is shown bellow:  
-![Entity Relationship Diagram](..\Images\1_2_Data_Warehouse.png)
+![Entity Relationship Diagram](../Images/1_2_Data_Warehouse.png)
 
 
 ## Tech Stack  
@@ -42,11 +42,11 @@ built using a star schema, the ERD is shown bellow:
 
 ### Queries  
 
-1. **[`TOP DEMANDED SKILLS`](..\1_EDA\01_top_demanded_skills.sql):** Here I answer: *What are the most in demand skills for Data Engineers?* by joining the `job_postings_fact` table witht the `skills_dim` table using the `skills_job_dim` as a bridge.    
+1. **[`TOP DEMANDED SKILLS`](../1_EDA/01_top_demanded_skills.sql):** Here I answer: *What are the most in demand skills for Data Engineers?* by joining the `job_postings_fact` table witht the `skills_dim` table using the `skills_job_dim` as a bridge.    
 
-2. **[`TOP PAYING SKILLS`](..\1_EDA\02_top_paying_skills.sql):** Here I answer: *What are the highest paying skills for Data Engineers?* by alteing the querie used previously to pull `salary_year_avg` while maintinging demand count to compare.
+2. **[`TOP PAYING SKILLS`](../1_EDA/02_top_paying_skills.sql):** Here I answer: *What are the highest paying skills for Data Engineers?* by alteing the querie used previously to pull `salary_year_avg` while maintinging demand count to compare.
 
-3. **[`OPTIMAL PAYING SKILLS`](..\1_EDA\03_optimal_paying_skills.sql):** Here I take the results of both queries (Demand and Pay) and create a multiplier to balance pay and demand, multiply them together and receive an optimal score for each skill. 
+3. **[`OPTIMAL PAYING SKILLS`](../1_EDA/03_optimal_paying_skills.sql):** Here I take the results of both queries (Demand and Pay) and create a multiplier to balance pay and demand, multiply them together and receive an optimal score for each skill. 
 
 **Key Insights:**  
 1. Here I find the the top languages are **1)SQL and 2)Python**. The top cloud technologies are **3)AWS and 4)Azure**, and top tools are **5)Apache Spark and 6)AirFlow**. 
