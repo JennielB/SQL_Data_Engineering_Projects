@@ -11,7 +11,7 @@ A SQL data project that explores the job market for Data Engineers, this project
 - **Outcomes:** Delivered **acctionable conclusions** regarding Python/SQL predominance, cloud technologies on the rise, and salary paterns.   
 
 Queries:  
-[`01_top_demanded_skills`](..\1_EDA\01_top_demanded_skills.sql) - Demand analysis with multi-table joins  
+[`01_top_demanded_skills`](../1_EDA/01_top_demanded_skills.sql) - Demand analysis with multi-table joins  
 [`02_top_paying_skills`](..\1_EDA\02_top_paying_skills.sql) - Salary analysis with aggregations  
 [`03_optimal_paying_skills`](..\1_EDA\03_optimal_paying_skills.sql) - Combined demand/salary optimization query  
 
